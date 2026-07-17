@@ -1,0 +1,150 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+
+body{
+    background:#202123;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    max-width:900px;
+    height:90vh;
+    background:#343541;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+/* Header */
+
+.header{
+    background:#2b2c32;
+    padding:18px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #444;
+}
+
+.header h2{
+    color:#19c37d;
+}
+
+.header button{
+    background:#19c37d;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.header button:hover{
+    background:#16a36b;
+}
+
+/* Chat Area */
+
+.chat-container{
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* Common Message */
+
+.message{
+    max-width:75%;
+    padding:15px;
+    border-radius:12px;
+    line-height:1.5;
+    word-wrap:break-word;
+}
+
+/* AI Message */
+
+.ai-message{
+    align-self:flex-start;
+    background:#444654;
+}
+
+/* User Message */
+
+.user-message{
+    align-self:flex-end;
+    background:#19c37d;
+    color:white;
+}
+
+/* Input Area */
+
+.input-container{
+    display:flex;
+    gap:10px;
+    padding:20px;
+    background:#2b2c32;
+}
+
+/* Input */
+
+#userInput{
+    flex:1;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#40414f;
+    color:white;
+    font-size:16px;
+}
+
+#userInput::placeholder{
+    color:#bbb;
+}
+
+/* Send Button */
+
+#sendBtn{
+    width:60px;
+    border:none;
+    border-radius:8px;
+    background:#19c37d;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#sendBtn:hover{
+    background:#16a36b;
+}
+
+/* Scrollbar */
+
+.chat-container::-webkit-scrollbar{
+    width:6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb{
+    background:#666;
+    border-radius:10px;
+}
